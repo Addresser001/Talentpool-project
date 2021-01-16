@@ -1,0 +1,101 @@
+
+
+/* style for the "Main container " */
+.main-container{
+    height: 900px;
+    background-color: blue;
+}
+
+
+
+/* Style for image by the Left  */
+.background-img-col{
+    height: 900px;
+    background-image: url(/assets/images/sign-in-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+/* Style for the "Welcome container", by the right side of the Big image  */
+.welcome-col{
+    height: 900px;
+    background-color:#FFFFFF;
+    padding: 120px 140px 0px 90px;
+}
+
+
+
+
+.forgotten-password{
+    float: right;
+    margin-top: 24px;
+}
+
+
+
+
+
+
+@media (max-width:1023px){
+
+
+    /* style for the "Main container " */
+    .main-container{
+        height: 850px;
+        background-color: #FFFFFF;
+    }
+
+
+    /* Style for image by the Left  */
+    .background-img-col{
+        height: 850px;
+        background-image: url(/assets/images/sign-in-bg.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+
+
+
+    /* Style for the "Welcome container", by the right side of the Big image  */
+    .welcome-col{
+        height: 850px;
+        background-color:#FFFFFF;
+        padding: 100px 0px 0px 20px;
+        margin-left: 10px;
+    }
+
+   
+}
+
+
+
+
+
+
+
+
+
+@media (max-width:767px){
+    /* style for the "Main container " */
+    .main-container{
+        height: 1700px;
+    }
+
+    /* Style for the "Welcome container", by the right side of the Big image  */
+    .welcome-col{
+        height: 850px;
+        background-color:#FFFFFF;
+        padding: 50px 0px 0px 0px;
+        margin-left:0px;
+    }
+    .forgotten-password{
+
+        float:none;
+        margin-top: 15px;
+        margin-left: 20px;
+    }
+}

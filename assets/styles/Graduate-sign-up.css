@@ -1,0 +1,40 @@
+/* style for the "Main container " */
+.main-container{
+    height: 1020px;
+}
+
+
+/* Style for image by the Left  */
+.background-img-col{
+    height: 1020px;
+    background-image: url(/assets/images/sign-up-bg-2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+.form-sign-up{
+    margin-top: 24px;
+}
+
+
+
+
+@media (max-width:767px){
+    /* style for the "Main container " */
+    .main-container{
+        height: 2380px;
+        width: 100%;
+    }
+
+    /* Style for the "Welcome container", by the right side of the Big image  */
+    .welcome-col{
+        height: 1380px;
+        background-color:#FFFFFF;
+        padding: 50px 0px 0px 0px;
+        margin-left:0px;
+    }
+}

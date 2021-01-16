@@ -1,0 +1,236 @@
+body{
+    background-color: #F8F8F8;
+}
+
+
+
+.lets-talk-container{
+    background-image: url(/assets/images/bg-4.jpg);
+    height: 448px;
+    background-position: center center;
+    background-repeat: no-repeat;
+     background-size: cover;
+}
+
+.lets-talk-container h1{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 47px;
+    text-align: center;
+    color: #FFFFFF;
+    padding-top: 244px;
+}
+
+
+
+
+
+
+
+
+.lets-talk-columns-container{
+    justify-content:space-evenly;
+}
+
+
+.lets-talk-columns{
+    height: 200px;
+    margin-top: 64px;
+    text-align: center;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 12px rgba(222, 222, 222, 0.25);
+    border-radius: 10px;
+}
+
+.lets-talk-columns h4{
+    padding-top: 24px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.lets-talk-write-up{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #9B9B9B;
+}
+
+.lets-talk-email{
+    color: #000000;
+    padding-top: 0px;
+}
+
+.our-office-write-up{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 24px;
+    color: #9B9B9B;
+}
+
+
+
+
+
+.feel-free-container{
+    height: 700px;
+    margin-top: 131px;
+    background: #FFFFFF;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.feel-free-container h4{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 160%;
+    color: #000000;
+    padding-top: 48px;
+}
+
+.form-input{
+    margin-top: 24px;
+    width: 35%;
+    padding: 15px 32px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 160%;
+    color: #C5C5C5;
+    border: 1px solid #C5C5C5;
+    box-sizing: border-box;
+    border-radius: 5px;
+
+}
+
+.form-textarea{
+    height: 180px;
+  
+}
+
+
+.send-message-button{
+    padding: 10px 30px;
+    margin-top: 40px;
+    background: #00AEFF;
+    border-radius: 5px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    border: 0px;
+    color: #FFFFFF;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1023px){
+
+
+    .lets-talk-columns{
+        height: 220px;
+        margin-top: 50px;
+        text-align: center;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 12px rgba(222, 222, 222, 0.25);
+        border-radius: 10px;
+    }
+
+    .lets-talk-email{
+        font-size: 13px;
+    }
+
+
+
+    .form-input{
+
+        width: 60%;  
+    }
+    
+    .form-textarea{
+
+        width: 60%;
+    }
+}
+
+
+
+
+
+
+
+@media (max-width:767px){
+
+    .lets-talk-container h1{
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 32px;
+        line-height: 47px;
+        text-align: center;
+        color: #FFFFFF;
+        padding-top: 180px;
+    }
+
+
+
+
+
+    .lets-talk-Sub-container{
+        margin-top: 100px;
+    }
+
+    .lets-talk-columns{
+        height: 200px;
+        margin-top: 24px;
+        text-align: center;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 12px rgba(222, 222, 222, 0.25);
+        border-radius: 10px;
+    }
+
+
+
+
+
+
+    .feel-free-container{
+        height: 700px;
+        margin-top: 610px;
+        background: #FFFFFF;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+
+
+
+    .form-input{
+
+        width: 100%;  
+    }
+    
+    .form-textarea{
+
+        width: 100%;
+    }
+    
+}

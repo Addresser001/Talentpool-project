@@ -1,0 +1,651 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+
+/* Scroll Bar effect */
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 2px 2px 5px grey; 
+    border-radius: 100px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background:  rgb(0, 174, 255);
+    box-shadow: inset 1px 1px 2px black;
+    border-radius: 100px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(8, 44, 92); 
+}
+
+
+
+
+
+
+
+
+/* Navigation styles  */
+.navbar-height{
+    
+    background-color: white;
+}
+
+.nav-link-1{
+    color:black !important;
+    margin-top: 10px;
+    font-size: 18px;
+    transition: all .4s;
+    
+}
+.nav-link-1:hover{
+    color: black !important;
+    border-bottom: 1px solid black;
+    transform: scale(1.2);
+    padding-top: 20px;
+    transition: all .4s;
+}
+
+.active a{
+    color:rgb(0, 174, 255) !important ;
+}
+.sign-in a{
+    margin-top: 15px;
+    border: 1px solid rgb(0, 174, 255);
+    border-radius: 5px;
+    color: rgb(0, 174, 255) !important;
+    text-align:center ;
+    margin-right: 15px;
+}
+
+
+
+.sign-up-1 a{
+    margin-top: 15px;
+    border-radius: 5px;
+    background-color: rgb(0, 174, 255);
+
+    text-align: center;
+}
+
+
+.dropdown-menu{
+    padding: 10px;
+}
+
+
+
+.dropdown-item{
+    border-radius: 5px;
+    background-color: rgb(0, 174, 255);
+    color: white;
+    text-align: center;
+    padding: 10px 0px;
+    margin: 0px auto;
+
+}
+
+
+.dropdown-item-1{
+    background-color: white;
+    color:  rgb(20, 57, 219);
+}
+
+
+
+
+
+
+
+/* "Find a Perfect Fit for Your Companies" styles */
+.find_the_perfect-card-container-fluid{
+    margin-top: 65px;
+    background-color:#D6D9DF;
+    padding-bottom: 50px;
+    padding-top: 30px;
+}
+
+.find_the_perfect-card-col{
+    margin-top: 80px;
+}
+
+.find_the_perfect-card{
+    background-color: transparent;
+    border: 0px;
+}
+
+.find_the_perfect-card h1{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.find_the_perfect-card p{
+    font-size: 20px;
+}
+.hire_to_talent-btn{/* "Hire to Talent" Button */
+    background-color:  rgb(0, 174, 255);
+    color: white;
+    font-size: 20px;
+}
+
+
+/* Styles for the three images by the right  */
+.Find_the_perfect-logo1 img{
+    width: 45%;
+    margin-left: 10px;
+    position: relative;
+    bottom: 5px;
+}
+.Find_the_perfect-logo1 h6{
+    color: rgb(8, 44, 92) ;
+}
+.Find_the_perfect-logo1 p{
+    font-size: 16px;
+}
+
+.card-img-1{/* the first image at the top */
+    width: 48%;
+    z-index: 5;
+}
+.card-img-2-and-3{/* the two images at the bottom */
+    position: relative;
+    bottom: 120px;
+}
+
+
+
+
+
+
+/* Style for "Trusted By Top Companies" */
+.trusted-text{
+    width: 200px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 36px;
+    margin: 32px 0px;
+    color: #7B7B7B;
+    
+}
+.trusted-companies{
+    margin-top: 51px;
+}
+
+
+
+
+
+/* Style for "Hear from Our Clients" */
+.hear-from-our-clients-container{
+    background-color:#EBECED;
+    padding: 50px 0px;
+}
+
+.hear-from-our-clients-Header{
+    text-align: center;
+}
+.hear-from-our-clients-Header p{
+    display: none;
+}
+
+
+.hear_from_our_client-Btn{
+    text-align: center;
+}
+.hear_from_our_client-Btn a{
+    padding: 5px 30px;
+}
+
+
+
+
+/* Style for "Meet Our Talents" */
+
+.meet_our_talents-container{
+    padding-bottom: 100px;
+    
+}
+
+.meet_our_talents-Header{
+    margin-top: 30px;
+    text-align: center;
+}
+
+.meet_our_talents-Designers{
+    border-bottom: 3px solid rgb(8, 44, 92);
+}
+
+.meet_our_talents-container nav ul li{
+    margin: 10px 30px;
+}
+
+.card-title-reduce-linespacing{
+    line-height: 20px;
+}
+.meet_our_talents-card a{
+    color: white;
+    background-color: rgb(8, 44, 92);
+    text-decoration: none;
+    text-align: center;
+}
+
+
+
+
+/* Style for "Hire In Inters 3 Steps" */
+.hire_in_Inters_Cards{
+    color: rgb(128, 125, 125);
+    border: none;
+}
+
+
+
+
+/* Style for " Hire the Best Talents" */
+.Hire_the_best_Tablents-Cards{
+    background-color: rgb(231, 229, 229);
+    border: none;
+    color:  rgb(128, 125, 125);
+    box-shadow: 1px 0px 10px rgb(236, 235, 235);
+    max-height: 400px;
+    min-height: 400px;
+}
+.Hire_the_best-Card_header{
+    font-weight: bold;
+    color: rgb(18, 72, 143);
+}
+
+
+
+
+/* Style for "Why Organizations choose Talentpool" */
+.why_organizations-img img{
+    transition: 1s;
+    border: 0px;
+}
+.why_organizations-img h6{
+    margin-top: 120px;
+}
+
+.why_organizations-img :hover img{
+    transform: scale(1.1);
+    transition: ease-in-out;
+    transition: 1s;
+}
+
+
+
+/* Style for Collaboration with Top Companies  */
+.collaboration-col h2{
+    margin-top: 50px;
+}
+.collaboration-card{
+    background-color: black;
+    color: silver;
+}
+
+.collaboration-card a{
+    text-decoration: none;
+    color: white;
+}
+
+.collaboration-col{
+    margin-top: 20px;
+}
+
+
+
+
+/* Style for "Build amazing Teams on Demand" */
+.build_amazing-img-1{
+    margin-left: 150px;
+}
+.build_amazing-img-2{
+    position: relative;
+    bottom: 160px;
+}
+
+.build-logo{
+   float: right;
+}
+.build-logo img{
+    width: 80%; 
+}
+.build-peviously_at p{
+    font-size: 12px;
+    float: left;
+}
+
+.build_team-card h5{
+    color: rgb(8, 44, 92);
+}
+.build_team-card p{
+    color: silver;
+}
+
+
+
+
+
+/* Style for "Not a Graduate" */
+.Not_a_graduate-container{
+    
+    padding-top:100px;
+    padding-bottom: 100px;
+    background-color:  rgb(0, 174, 255);
+    text-align: center;
+}
+
+.Not_a_graduate-header{
+    color: white;  
+}
+
+.Not_a_graduate-container a{
+    background-color: rgb(8, 44, 92) ;
+}
+
+
+
+
+
+
+/* Style for "From our Blog" */
+.from_our_blog-container{
+    padding: 90px 0px;
+    background-color: white;
+}
+
+.from_our_blog-Header h1{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.from_our_blog-Header h6{
+    color:  rgb(8, 44, 92);
+}
+
+
+
+
+
+/* Style for "Footer" */
+footer{
+    background-color:#084482;
+    padding: 30px 0px 10px 0px;
+    color: rgb(224, 218, 218);
+}
+
+footer p{
+    padding-top:10px ;
+    font-size: 15px;
+}
+
+footer li{
+    display:block;
+    padding-top: 10px;
+}
+
+footer a{
+    margin-top: 10px;
+    text-decoration: none;
+    color:rgb(224, 218, 218);
+    font-size: 15px;
+}
+
+footer a:hover{
+    text-decoration: none;
+    color: black;
+}
+
+hr{
+    border: 1px solid rgb(224, 218, 218);
+}
+
+
+
+
+
+
+
+
+/* Tablet view  */
+@media (max-width:1023px){
+
+    
+    
+    .sign-in a{
+        margin-right: 0px;
+    }
+
+
+
+
+
+
+    /* "Find a Perfect Fit for Your Companies" styles */
+    .Find_the_perfect-logo1 img{
+        width: 100%;
+        margin-left: 0px;
+        position: relative;
+        bottom: 0px;
+    }
+
+
+    /* Style for "Trusted By Top Companies" */
+    .trusted-text h2{
+        font-size: 25px;
+        margin: 10px 0px;
+    }
+
+  
+    /* Style for "Hear from Our Clients" */
+    .hear-from-our-clients-footer h6{
+        font-size: 13px;
+    }
+    .hear-from-our-clients-footer p{
+        font-size: 12px;
+    }
+
+
+    /* Style for "Meet Our Talents" */
+    .meet_our_talents-container{
+        padding-bottom: 50px;
+    }
+    
+    
+
+
+    /* Style for "Why Organizations choose Talentpool" */
+    .why_organizations-img h6{
+        margin-top: 70px;
+    }
+
+    .why_organizations-img h4{
+        font-size:18px ;
+    }
+
+    .organizations-choose h2{
+        font-size: 25px;
+    }
+    .organizations-choose p{
+        font-size: 15px;
+    }
+
+
+
+
+
+    /* Style for Collaboration with Top Companies  */
+    .collaboration-col h2{
+        font-size: 25px;
+        margin-top: 0px;
+    }
+    .collaboration-col p{
+        font-size: 15px;
+    }
+
+
+
+    /* Style for "Build amazing Teams on Demand" */
+    .build_amazing-img-1{
+        margin-left: 100px;
+    }
+
+
+
+    /* Style for "Not a Graduate" */
+    .Not_a_graduate-header{
+        color: white;
+        font-size: 35px;
+    }
+
+
+
+
+    /* Style for "From our Blog" */
+    .from_our_blog-Header h5{
+       font-size: 14px;
+    }
+
+
+
+
+    footer h2{
+        font-size: 25px;
+    }
+    
+}
+
+
+
+
+
+
+
+
+/* Mobile view  */
+
+@media (max-width:767px){
+
+
+    .sign-in a{
+        margin-right: 0px;
+    }
+
+
+
+    /* "Find a Perfect Fit for Your Companies" styles */
+    .find_the_perfect-card-col{
+        margin-top: 0px;
+    }
+
+    .find_the_perfect-card h1{
+        font-size: 40px;
+
+    }
+    .cards_by_the_side_of-Find_the_perfect-header{
+        display: none;
+    }
+   
+
+
+
+    /* Style for "Trusted By Top Companies" */
+    .trusted-text {
+        text-align: center;
+        line-height: 6px;
+        margin: 10px 0px;
+    }
+    .trusted-companies{
+        margin-top: 0px;
+        margin-bottom: 30px;  
+    }
+    
+
+
+
+     /* Style for "Hear from Our Clients" */
+    .hear-from-our-clients-container{
+        padding-bottom: 50px;
+    }
+    .hear-from-our-clients-Header p{
+        display: block;
+    }
+
+    .hear_from_our_client-Btn{
+        text-align: center;
+        margin-top: -25px;
+    }
+
+    
+
+
+
+    /* Style for "Meet Our Talents" */
+    .meet_our_talents-container{
+        padding-bottom: 80px ;
+        
+    }
+    .meet_our_talents-container nav{
+        display: none;
+    }
+
+
+
+
+    /* Style for Collaboration with Top Companies  */
+    .collaboration-col h2{
+        margin-top: 0px;
+    }
+
+
+
+    /* Style for "Build amazing Teams on Demand" */
+    .build_amazing-container{
+        text-align: center;
+    }
+
+    .Build_amazing-Cards{
+        display: none;
+    }
+
+
+
+    /* Style for "Not a Graduate" */
+    .Not_a_graduate-container{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-color:  rgb(0, 174, 255);
+        text-align: center;
+    }
+    
+    .Not_a_graduate-header{
+        color: white;
+        font-size: 30px;
+    }
+
+
+    footer h2{
+        font-size: 20px;
+        font-weight: bold;
+    }
+}
+

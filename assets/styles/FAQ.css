@@ -1,0 +1,423 @@
+.search-bar-container{
+    height: 430px;
+    background-color:#F8F8F8;
+    margin-top: 70px;
+    padding-top: 120px;
+}
+
+.search-bar-container h2{
+    text-align: center;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 50px;
+    align-items: center;
+    color: #084482;
+    padding-bottom: 35px;
+
+}
+
+.search-bar-sub-container{
+    width: 50%;
+    margin: 0px auto;    
+}
+
+.form-control{
+    background: #F8F8F8;
+    border: 2px solid #B5B5B5 !important;
+    border-right: 0px !important;
+    width: 90% !important;
+    border-right: 0px;
+    border-radius: 5px 0px 0px 5px;
+    
+    border: 0px;
+}
+
+.btn{
+    padding: 5px 10px;
+    margin: 0px;
+    border: 2px solid #B5B5B5;
+    border-left:0px  ;
+    border-radius: 0px 5px 5px 0px;
+    background-color:#F8F8F8;
+}
+
+
+
+
+
+
+
+
+.ask-questions-about-container{
+
+    background-color: #084482;
+}
+
+
+
+
+.ask-questions-about-sub_container{
+    
+    padding-bottom: 100px;
+}
+
+.ask-questions-about-header{
+    padding-top: 64px;
+    padding-bottom: 44px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center;
+
+    color: #FFFFFF;
+
+}
+
+.interpool-header{
+    margin: 0px;
+    margin-bottom: 7px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    align-items: center;
+    color: #FFFFFF;
+}
+.interpool-items{
+    margin-top: 16px;
+}
+
+.what-HNGi-button{
+    width: 100%;
+    padding: 15px 20px;
+    text-align: left;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #B2B2B2;
+    background: #FFFFFF;
+    box-shadow: 2px 8px 20px rgba(181, 181, 181, 0.2);
+    border-radius: 5px;
+    border: 0px;
+}
+
+.fa-chevron-down{
+    float: right;
+}
+
+
+.history{
+    width: 100%;
+    padding: 15px 20px;
+    text-align: left;
+    background: #FFFFFF;
+    box-shadow: 2px 8px 20px rgba(181, 181, 181, 0.2);
+    border-radius: 5px;
+    border: 0px;
+}
+
+.history h5{
+    font-size: 16px;
+    color: #084482;
+    font-weight: 500;
+}
+
+.history p{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    /* or 150% */
+
+    display: flex;
+    align-items: center;
+
+    color: #084482;
+
+}
+
+
+
+.application-header{
+    margin: 0px;
+    margin-bottom: 8px;
+    margin-top: 80px;
+}
+
+.application-items{
+    margin-top: 16px;
+}
+
+
+
+.second_column{
+    margin-left: 214px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.popular-searches-container{
+    padding-bottom: 68px;
+    background: #F8F8F8;
+}
+
+
+.popular-searches-sub_container h4{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 35px;
+    text-align: center;
+    color: #084482;
+    padding-top: 64px;
+    padding-bottom: 8px;
+}
+.some-of-the-popularly{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 24px;
+    text-align: center;
+    color: #B5B5B5;
+    padding-bottom: 10px;
+}
+
+
+
+
+
+.popular-searches-sub_container-2{
+    justify-content: space-between;
+}
+.popularly-asked-1{
+    width: 100%;
+    padding: 17px 0px 17px 26px;
+    background: #FFFFFF;
+    box-shadow: 2px 8px 20px rgba(181, 181, 181, 0.2);
+    border-radius: 5px;
+    font-family: Poppins;
+    font-style: normal;
+    border: 0px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #337AB7;
+    text-align: left;
+    margin-top: 29px;
+}
+
+
+.popularly-asked-2{
+    width: 100%;
+    background: #FFFFFF;
+    box-shadow: 1px 2px 4px rgba(214, 217, 223, 0.5);
+    border-radius: 5px;
+    padding: 17px 0px 17px 26px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    border: 0px;
+    text-align: left;
+    margin-top: 29px;
+    color: #B2B2B2;
+}
+
+buttn:hover{
+    color: black;
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+
+
+
+.could_not_find_your_answers-container{
+    padding-bottom: 211px;
+    background-color:#084482;
+}
+
+.could_not_find_your_answers-container h4{
+    padding-bottom: 20px;
+}
+.contact-container{
+    display: flex;
+    justify-content: center;
+   
+}
+
+
+
+.contact-button{
+    text-align: left;
+    padding: 17px 50px;
+    background: #FFFFFF;
+    box-shadow: 2px 8px 20px rgba(181, 181, 181, 0.2);
+    border-radius: 5px;
+    border: 0px;
+    position: relative;
+    top: 68px;
+}
+
+.middle-button{
+    margin: 0px 40px;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1023px){
+
+    .search-bar-container{
+        margin-top: 60px;
+        padding-top: 120px;
+    }
+    
+    .form-control{
+        width: 88% !important;
+    }
+
+
+
+
+
+    .second_column{
+        margin-left: 120px;
+    }
+
+
+
+
+
+    .contact-button{
+        text-align: left;
+        padding: 17px 40px;
+    }
+    
+    .middle-button{
+        margin: 0px 20px;
+    }
+    
+    
+}
+
+
+
+
+
+@media (max-width:767px){
+    .search-bar-container{
+        margin-top: 60px;
+        padding-top: 120px;
+    }
+
+    .search-bar-sub-container{
+        width: 100%;
+
+    }
+
+    .search-bar-sub-container form{
+        justify-content: center;
+    }
+    
+    .form-control{
+        width: 70% !important;
+    }
+    
+
+
+
+
+    .ask-questions-about-sub_container{
+    
+        padding-bottom: 50px;
+    }
+
+
+    .interpool-header{
+        text-align: center;
+    }
+
+
+
+
+
+
+    .application-header{
+        text-align: center;
+        margin: 0px;
+        margin-bottom: 8px;
+        margin-top: 30px;
+    }
+
+
+    .second_column{
+        margin-left: 0px;
+    }
+
+
+
+    .getting-started-header{
+        margin-top: 30px;
+    }
+    
+
+
+
+
+
+
+    .contact-container{
+        flex-wrap: wrap;
+        justify-content: center;
+       
+    }
+
+
+    .contact-button{
+        padding: 17px 50px;
+        background: #FFFFFF;
+        box-shadow: 2px 8px 20px rgba(181, 181, 181, 0.2);
+        border-radius: 5px;
+        border: 0px;
+        position: relative;
+        top: 68px;
+    }
+    
+    .middle-button{
+        margin: 40px 0px;
+    }
+
+
+}

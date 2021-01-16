@@ -1,0 +1,309 @@
+.at_talent_pool-container-1{
+    background-image: url(/assets/images/bg-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 460px;
+    padding-bottom: 50px;
+    text-align: center; 
+}
+
+.at_talent_pool-container-2{
+    padding-top: 248px;
+    padding-bottom: 50px;
+    width: 60%;
+}
+
+.at_talent_pool-container-2 h1{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 47px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+
+
+.founded-in-2020-container-1{
+    background-color: #F8F8F8;;
+    padding: 80px 0px;
+    text-align: center;
+}
+
+.founded-in-2020-container-2{
+    width: 60%;
+}
+
+.founded-in-2020 h6{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+}
+
+
+
+
+
+
+.who-we-are-conatiner-1{
+    background-color: #F8F8F8;;
+    height: 450px;
+}
+
+.who_we_are-card{
+    min-height: 370px;
+    max-height: 370px;
+    padding: 0px 32px;
+    padding-top: 50px;
+
+    background: #FFFFFF ;
+    box-shadow: 0px 30px 60px rgba(111, 111, 111, 0.08);
+    border-radius: 10px;
+}
+
+
+.who_we_are-card p{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.who_we_are-card h5{
+    padding-top: 5px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 50px;
+}
+
+
+
+
+
+
+.connect-with-container-1{
+    width: 100%;
+   
+    background-color: silver;
+    overflow: hidden;
+}
+
+.connect-with-container-1 img{
+    height: 590px;
+}
+
+
+.connect-with-container-2{
+    margin-top: 57px;
+}
+
+.connect-with_rows{
+    margin-top: 40px;
+}
+.connect-with-container-2 p{
+    font-size: 16px;
+    line-height: 24px;
+
+    color: #000000;
+
+}
+.we_streamline{
+    margin-top: 16px;
+}
+
+
+.connect-with-btn{
+    margin-top: 10px;
+}
+
+
+
+/* Tablet view  */
+@media (max-width:1023px){
+
+    .at_talent_pool-container-2{
+        padding-top: 200px;
+        height: 500px;
+        width: 100%;
+    }
+
+
+
+
+    .founded-in-2020-container-2{
+        width: 100%;
+    }
+
+
+
+
+
+
+    .who-we-are-conatiner-1{
+        background-color: #F8F8F8;;
+        height: 400px;
+    }
+    
+    .who_we_are-card{
+        min-height: 350px;
+        max-height: 350px;
+        padding: 0px 0px;
+        padding-top: 10px;
+    }
+    
+    
+    .who_we_are-card p{
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    
+    .who_we_are-card h5{
+        padding-top: 5px;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 40px;
+    }
+    
+
+
+
+    .connect-with-btn{
+        margin-top: 0px;
+    }
+}
+
+
+
+
+
+
+
+@media (max-width:767px){
+
+    .at_talent_pool-container-1{
+        background-image: url(/assets/images/bg-2.jpg);
+        padding-bottom: 00px;
+        height: 430px;
+        position: absolut;
+        width: 100%;
+ 
+ 
+    }
+
+    .at_talent_pool-container-2{
+        padding-top: 150px;
+        padding-bottom: 0px;
+        width: 100%;
+    }
+
+    .at_talent_pool-container-2 h1{
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 36px;
+        text-align: center;
+
+        color: #FFFFFF;
+    }
+
+
+
+
+    .founded-in-2020-container-1{
+        margin-top: 10px;
+        padding: 32px 0px;
+        text-align: center;
+        background-color: #F8F8F8;;
+    }
+    
+    .founded-in-2020-container-2{
+        width: 100%;
+    }
+    
+    .founded-in-2020 h6{
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        color: #000000;
+    }
+
+
+
+
+
+
+
+    .who-we-are-conatiner-1{
+        height: 1000px;
+        margin-top: 10px;
+        padding-top: 10px;
+    }
+    
+    .who_we_are-middle-box{
+        margin: 10px 0px;
+    }
+    .who_we_are-card{
+        min-height: 305px;
+        max-height: 305px;
+        padding: 0px 0px;
+        padding-top: 10px;
+    }
+    
+    
+
+
+
+
+
+
+    .connect-with-container-1{
+        width: 100%;
+       
+        background-color: silver;
+        overflow: hidden;
+        padding: 48px 16px 40px 16px;
+    }
+    
+    .connect-with-container-1 img{
+        height: 300px;
+    }
+    
+    
+    .connect-with-container-2{
+        margin-top: 32px;
+    }
+    
+    .connect-with_rows{
+        margin-top: 40px;
+    }
+    .connect-with-container-2 p{
+        font-size: 15px;
+        line-height: 24px;
+    
+        color: #000000;
+    
+    }
+    .we_streamline{
+        margin-top: 16px;
+    }
+   
+    .connect-with-btn{
+        text-align: center;
+    }
+}

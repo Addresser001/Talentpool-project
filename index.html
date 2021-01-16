@@ -1,0 +1,894 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="/assets/styles/index.css" type="text/css">
+        <title>Talentpool</title>
+    </head>
+    <body>
+        <!-- Navigation Bar -->
+        <div class="container-fluid  fixed-top navbar-height pb-1">
+            <div class="container ">
+                <nav class="navbar navbar-expand-lg  navbar-light">
+                    <!-- Site Logo  -->
+                    <svg width="123" height="26" viewBox="0 0 123 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M108.953 10C106.729 10 104.543 11.3896 102.857 12.8507C103.279 13.3115 103.682 13.7898 104.063 14.2845C104.244 14.5231 104.508 14.8458 104.834 15.2116C106.133 14.0722 107.66 13.0631 108.953 13.0631C111.15 13.0631 112.937 14.85 112.937 17.047C112.937 19.2439 111.15 21.0308 108.953 21.0308C106.496 21.0308 103.189 17.398 102.224 16.124C101.751 15.4975 97.4713 10 93.048 10C89.1619 10 86 13.1619 86 17.048C86 20.9341 89.1619 24.095 93.048 24.095C95.2081 24.095 97.3294 22.7831 98.9944 21.3683C98.5309 20.8692 98.0907 20.3491 97.6752 19.8094C97.4654 19.5369 97.2467 19.2716 97.0193 19.0137C95.7537 20.0985 94.2926 21.0308 93.048 21.0308C90.8511 21.0308 89.0641 19.2439 89.0641 17.047C89.0641 14.85 90.8511 13.0631 93.048 13.0631C95.5056 13.0631 98.8125 16.6959 99.7775 17.9699C100.251 18.5964 104.53 24.0939 108.953 24.0939C110.821 24.092 112.613 23.3489 113.934 22.0277C115.255 20.7066 115.998 18.9153 116 17.047C115.998 15.1785 115.255 13.387 113.934 12.0658C112.613 10.7447 110.822 10.0017 108.953 10Z" fill="#00AEFF"/>
+                        <path d="M1.8 4.624V5.608H2.016V4.864H8.808V24.736H8.088V25H12.888V24.736H12.144V4.864H18.864V5.608H19.08V4.624H1.8ZM26.2817 22.816C25.1537 24.04 23.6417 24.784 21.9137 24.784C19.2497 24.784 19.2257 20.584 19.2257 19.048C19.2257 17.128 19.7057 13.24 21.9137 13.24C23.6417 13.24 25.1537 13.96 26.2817 15.184V22.816ZM29.9057 13.216V13H25.7537V13.216H26.2817V14.872C25.1537 13.72 23.6177 13.024 21.9137 13.024C21.5537 13.024 21.2657 13.072 20.7137 13.192C17.9297 13.768 15.9377 16.216 15.9377 19.024C15.9377 21.784 17.8337 24.184 20.7617 24.88C21.1697 24.952 21.5297 25 21.9137 25C23.6417 25 25.1537 24.304 26.2817 23.128V24.76H25.7537V24.976H29.9057V24.76H29.3777V13.216H29.9057ZM35.3693 4.816H35.9213V4.6H31.7693V4.816H32.3213V24.76H31.7693V25H35.9213V24.76H35.3693V4.816ZM49.4406 19.096C49.4166 18.136 49.3206 17.728 49.2246 17.416C48.5766 15.04 46.6566 13.576 44.4726 13.072C44.1126 13.024 43.7766 13 43.4646 13C43.2726 13 43.0326 13.024 42.8166 13.048C42.6966 13.072 42.5766 13.072 42.4566 13.072C39.4086 13.696 37.4406 16.192 37.4406 18.976C37.4406 21.76 39.3126 24.184 42.0006 24.832C42.2886 24.904 43.0086 25 43.4646 25C45.5766 25 47.4726 23.944 48.6246 22.048H48.3606C47.3046 23.8 45.4806 24.784 43.4646 24.784C40.8966 24.784 40.7526 20.704 40.7526 19.096H46.1526H49.4406ZM40.7526 18.904C40.8486 17.344 41.0166 16.24 41.3766 15.112C41.4006 15.136 41.9046 13.384 43.1766 13.216H43.4646H43.7286C44.5206 13.312 45.0246 14.008 45.2886 14.56C45.8406 15.808 46.1286 17.296 46.1286 18.904H40.7526ZM63.6459 24.784V18.568C63.4539 15.568 61.3419 13.096 58.2939 13.096C56.8779 13.096 55.5819 13.648 54.6459 14.584V13.264H55.1739V13.024H50.9499V13.264H51.4779V24.808H50.9499V25H55.1739V24.808H54.6459V14.848C55.5339 13.912 56.8539 13.312 58.2939 13.312C60.3579 13.312 60.6459 16.624 60.7179 17.968V24.784H60.1899V25H64.2219V24.784H63.6459ZM71.7782 12.28V12.736H68.7062V8.368H69.2342V8.176H65.1542V8.368H65.6582V20.992H65.6822C65.6822 23.224 67.1222 25 68.8502 25C70.3382 25 71.6342 23.512 71.8982 21.496H71.7062C71.5382 22.72 70.9622 23.584 70.2902 23.584C69.4502 23.584 68.7062 22.336 68.7062 20.92V12.928H71.7782V13.36H71.9942V12.28H71.7782ZM80.4861 14.536H77.2941V4.864H80.5101C83.6541 6.856 84.0141 13 80.4861 14.536ZM80.8221 4.648H73.3821V4.864H74.0781V24.736H73.3821V25H77.8461V24.736H77.2941V14.776H80.4861C87.4221 15.064 87.6861 4.744 80.8221 4.648Z" fill="#333333"/>
+                        <path d="M121.088 5.816H121.64V5.6H117.488V5.816H118.04V25.76H117.488V26H121.64V25.76H121.088V5.816Z" fill="#333333"/>
+                    </svg>
+                        
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></i></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active mr-3 ">
+                        <a class="nav-link  nav-link-1" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item  mr-3">
+                        <a class="nav-link nav-link-1" href="/assets/views/About us.html">About Us</a>
+                        </li>
+                        <li class="nav-item  mr-3">
+                        <a class="nav-link nav-link-1" href="/assets/views/Directories.html">Directories</a>
+                        </li>
+                        <li class="nav-item  mr-3">
+                            <a class="nav-link nav-link-1" href="/assets/views/FAQ.html">FAQ</a>
+                        </li>
+                        <li class="nav-item  mr-3">
+                            <a class="nav-link nav-link-1" href="/assets/views/Contact.html">Contact Us</a>
+                        </li>
+
+                        <li class="nav-item sign-in">
+                            <a class="nav-link    pl-4 pr-4  pt-1 pb-1 " href="/assets/views/Sign-in.html" >
+                                Sign in
+                            </a>
+                            
+                        </li>
+                        
+                        <li class="nav-item dropdown  sign-up-1">
+                            <a class="nav-link  text-white    pl-4 pr-4   pt-1 pb-1 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Sign up
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <h6 class="dropdown-item-1"><b>Sign up as:</b></h6>
+                                <a class="dropdown-item sign-up mt-2  pt-1 pb-1" href="/assets/views/Employers-sign-up.html">Employer</a>
+                                <a class="dropdown-item sign-up mt-2  pt-1 pb-1" href="/assets/views/Graduate-sign-up.html">Talent</a>
+                            </div>
+                        </li>
+                    </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+
+        <!-- Code for "Find the Perfect Fit for your companies" -->
+        <div class="container-fluid find_the_perfect-card-container-fluid  ">
+            <div class="container">
+                <div class="row">
+                    <!-- Header & Text by the Left -->
+                    <div class="col find_the_perfect-card-col ">
+                        <div class="card find_the_perfect-card">
+                            <div class="card-body">
+                            <h1 class="card-title">Find the perfect fit for you<br/> Company</h1>
+                            <p class="card-text">Suscipit libero pretium nullam potenti. Interdum, blandit phasellus<br/>consectetuer dolor ornare dapibus</p>
+                            <a href="#" class="btn hire_to_talent-btn mt-5 pr-3 pl-3">Hire To Talent</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- The Three Images by the Right  -->
+                    <div class="col-5  cards_by_the_side_of-Find_the_perfect-header">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card  card-img-1 m-auto">
+                                    <img src="/assets/images/img-1.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body Find_the_perfect-logo1">
+                                        <h6 class="card-text"><b>Adelanke Adelanke</b></h6>
+                                        <p class="card-text">Frontend Developer</p>
+                                        
+                                        <aside class="build-peviously_at "><p>Previously at</p>    
+                                        <aside class="" ><img class="img-fluid " src="/assets/images/logo11.jpg"></aside>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row  card-img-2-and-3">
+                                <div class="col-6">
+                                    <div class="card  card-img">
+                                        <img src="/assets/images/img-2.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body  Find_the_perfect-logo1">
+                                            <h6 class="card-text"><b>Adelanke Adelanke</b></h6>
+                                            <p class="card-text">UI / UX Designer</p>
+                                            
+                                            <aside class="build-peviously_at"><p>Previously at</p>    
+                                            <aside><img class="img-fluid" src="/assets/images/logo10.jpg"></aside>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="card  card-img">
+                                        <img src="/assets/images/img-3.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body  Find_the_perfect-logo1">
+                                            <h6 class="card-text"><b>Adelanke Adelanke</b></h6>
+                                            <p class="card-text">Backend Developer</p>
+                                            
+                                            <aside class="build-peviously_at"><p>Previously at</p>    
+                                            <aside ><img class="img-fluid" src="/assets/images/logo12.jpg"></aside>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Code for "Trusted by Top Companies " -->
+        <div class="container-fluid  trusted_by_top-container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-4 col-lg-3 trusted-text">
+                        <h2>Trusted By Top Companies</h2>
+                    </div>
+                    <div class="col-md-8 col-lg-9">
+                        <div class="row">
+                            <div  class="col-4 col-md-2 trusted-companies"><img class="img-fluid" src="/assets/images/logo2.jpg"></div>
+                            <div  class="col-4 col-md-2 trusted-companies"><img class="img-fluid" src="/assets/images/logo3.jpg"></div>
+                            <div  class="col-4 col-md-2 trusted-companies"><img class="img-fluid" src="/assets/images/logo4.jpg"></div>
+                            <div  class="col-4 col-md-2 trusted-companies"><img class="img-fluid" src="/assets/images/logo5.jpg"></div>
+                            <div  class="col-4 col-md-2 trusted-companies"><img class="img-fluid" src="/assets/images/logo6.jpg"></div>
+                            <div  class="col-4 col-md-2 trusted-companies"><img class="img-fluid" src="/assets/images/logo7.jpg"></div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+        
+
+
+        <!-- code for Hear from our Clients -->
+        <div class="container-fluid  hear-from-our-clients-container">
+            <div class="container  mt-4 ">
+                <!-- Header & Text  -->
+                <div class="hear-from-our-clients-Header">
+                    <h2><b>Hear from Our Clients</b></h2>
+                    <p>We make sourcing for talents more easy.<br/> Here are some testimonials from our<br/> satisfied clients.</p>
+                </div>
+
+                <!-- the Three Cards below the header  -->
+                <div class="row  mt-4">
+                    <div class="col-12 col-md-4  mt-1  ">
+                        <div class="card  mb-3  hear-from-our-clients-Clients" >
+                            <div class="card-header bg-transparent border-white"><img src="/assets/images/quote.jpg"></div>
+                            <div class="card-body ">
+                              <p class="card-text">With supporting text below as a natural lead-in to additional content.With supporting text below.With supporting text below.With supporting text below.</p>
+                            </div>
+                            <div class="card-footer bg-transparent border-white  hear-from-our-clients-footer">
+                                <aside class="row mt-5">
+                                    <aside class="col-3"><img src="/assets/images/small-circle.jpg"></aside>
+                                    <aside class="col-9 mt-1 ">
+                                        <h6><b>Adeleke Oluwakemi</b></h6>
+                                        <p>CEO at <b>Facebook</b></p>
+                                    </aside>
+                                </aside>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4  mt-1">
+                        
+                        <div class="card  mb-3  hear-from-our-clients-Clients" >
+                            <div class="card-header bg-transparent border-white"><img src="/assets/images/quote.jpg"></div>
+                            <div class="card-body ">
+                              <p class="card-text">With supporting text below as a natural lead-in to additional content.With supporting text below.With supporting text below.With supporting text below.</p>
+                            </div>
+                            <div class="card-footer bg-transparent border-white  hear-from-our-clients-footer">
+                                <aside class="row mt-5">
+                                    <aside class="col-3"><img src="/assets/images/small-circle.jpg"></aside>
+                                    <aside class="col-9 mt-1 ">
+                                        <h6><b>Adeleke Oluwakemi</b></h6>
+                                        <p>CEO at <b>Facebook</b></p>
+                                    </aside>
+                                </aside>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="col-12 col-md-4  mt-1">
+                        
+                        <div class="card  mb-3  hear-from-our-clients-Clients" >
+                            <div class="card-header bg-transparent border-white"><img src="/assets/images/quote.jpg"></div>
+                            <div class="card-body ">
+                              <p class="card-text">With supporting text below as a natural lead-in to additional content.With supporting text below.With supporting text below.With supporting text below.</p>
+                            </div>
+                            <div class="card-footer bg-transparent border-white  hear-from-our-clients-footer">
+                                <aside class="row mt-5">
+                                    <aside class="col-3"><img src="/assets/images/small-circle.jpg"></aside>
+                                    <aside class="col-9 mt-1 ">
+                                        <h6><b>Adeleke Oluwakemi</b></h6>
+                                        <p>CEO at <b>Facebook</b></p>
+                                    </aside>
+                                </aside>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                </div><!-- "View more" Button below the cards  -->
+                <div class="hear_from_our_client-Btn">
+                    <a href="#" class="btn hire_to_talent-btn mt-5">View more <i class="fa fa-chevron-right"></i></a>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <!-- Code for "Meet our talents " -->
+        <div class="container-fluid  meet_our_talents-container">
+            <div class="container">
+                <!-- Header  -->
+                <div class="hear-from-our-clients-Header mt-5">
+                    <h2><b>Meet Our Talents</b></h2>
+                </div>
+
+                <!-- Navigation Bar  -->
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                      <ul class="navbar-nav">
+                        <li class="nav-item active  meet_our_talents-Designers">
+                          <a class="nav-link" href="#">Designers <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Developers</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Product Managers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Operations</a>
+                        </li>
+                      </ul>
+                    </div>
+                </nav>
+
+                <!-- "Meet Our Talents" cards  -->
+                <div class="card-group  meet_our_talents-card">
+                    <div class="card  ml-2 mr-2">
+                        <img src="/assets/images/img-4.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title  card-title-reduce-linespacing "><b>Adelanke Adelanke</b></h5>
+                            <p class="card-title-reduce-linespacing">UI / UX Designer</p>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <p>Previously at <b>Facebook</b></p>
+                            <img src="/assets/images/logo8.jpg">
+                        </div>
+                        <a href="#">
+                            <div class="card-footer">
+                                <h5>Visit Adelanke</h5>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card ml-2 mr-2">
+                        <img src="/assets/images/img-5.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title  card-title-reduce-linespacing"><b>Adelanke Adelanke</b></h5>
+                            <p class="card-title-reduce-linespacing">UI / UX Designer</p>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <p>Previously at <b>Netflix</b></p>
+                            <img src="/assets/images/logo9.jpg">
+                        </div>
+                        <a href="#">
+                            <div class="card-footer">
+                                <h5>Visit Adelanke</h5>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card ml-2 mr-2">
+                        <img src="/assets/images/img-6.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title  card-title-reduce-linespacing"><b>Adelanke Adelanke</b></h5>
+                            <p class="card-title-reduce-linespacing">UI / UX Designer</p>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <p>Previously at <b>Fluterwave</b></p>
+                            <img src="/assets/images/logo10.jpg">
+                        </div>
+                        <a href="#">
+                            <div class="card-footer">
+                                <h5>Visit Adelanke</h5>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+
+
+
+
+                <!-- Hire in Inters 3 steps  -->
+                <div class="hear-from-our-clients-Header mt-5  pt-5">
+                    <!-- "Header" -->
+                    <h2><b>Hire in Inters 3 steps</b></h2>
+                </div>
+
+                <!-- the Three Columns  -->
+                <div class="row mt-3 ">
+                    <div class="col-12 col-md-4  mt-2">
+                        <div class="card text-center  hire_in_Inters_Cards">
+                            <div class="card-body">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="24" cy="24" r="24" fill="#084482"/>
+                                    <path d="M23.3605 31V15.904H21.3925V13.96H25.4965V31H23.3605Z" fill="white"/>
+                                </svg>  
+                                <h5 class="card-title  mt-3">Create Profile</h5>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional content.  as a natural lead-in to additional content.</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4  mt-2">
+                        <div class="card text-center  hire_in_Inters_Cards">
+                            <div class="card-body">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="24" cy="24" r="24" fill="#084482"/>
+                                    <path d="M18.3948 30.76V29.2C18.7788 28.864 19.3788 28.344 20.1948 27.64C21.0268 26.936 21.6428 26.408 22.0428 26.056C22.4428 25.688 22.9708 25.2 23.6268 24.592C24.2828 23.968 24.7788 23.448 25.1148 23.032C25.4668 22.616 25.8268 22.136 26.1948 21.592C26.8828 20.568 27.2268 19.56 27.2268 18.568C27.2268 17.56 26.9628 16.752 26.4348 16.144C25.9228 15.536 25.1068 15.232 23.9868 15.232C22.8828 15.232 22.0348 15.576 21.4428 16.264C20.8508 16.936 20.5308 17.832 20.4828 18.952H18.3948C18.4588 17.16 18.9948 15.784 20.0028 14.824C21.0268 13.848 22.3468 13.36 23.9628 13.36C25.5948 13.36 26.8988 13.824 27.8748 14.752C28.8668 15.664 29.3628 16.912 29.3628 18.496C29.3628 20.4 28.4348 22.36 26.5788 24.376C25.9068 25.096 25.3868 25.624 25.0188 25.96C23.9948 26.952 22.8988 27.936 21.7308 28.912H29.8908V30.76H18.3948Z" fill="white"/>
+                                </svg> 
+                                <h5 class="card-title  mt-3">Post Request</h5>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional content.  as a natural lead-in to additional content.</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4  mt-2">
+                        <div class="card text-center  hire_in_Inters_Cards" >
+                            <div class="card-body">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="24" cy="24" r="24" fill="#084482"/>
+                                    <path d="M18.3736 18.56C18.5016 17.168 19.0776 16.08 20.1016 15.296C21.1416 14.496 22.4616 14.096 24.0616 14.096C25.6776 14.096 26.9496 14.52 27.8776 15.368C28.8216 16.216 29.2936 17.296 29.2936 18.608C29.2936 19.552 29.0296 20.384 28.5016 21.104C27.9736 21.808 27.2936 22.288 26.4616 22.544V22.664C27.4376 22.936 28.2056 23.464 28.7656 24.248C29.3256 25.032 29.6056 26.08 29.6056 27.392C29.6056 28.704 29.1176 29.816 28.1416 30.728C27.1816 31.64 25.8456 32.096 24.1336 32.096C22.4376 32.096 21.0456 31.664 19.9576 30.8C18.8696 29.936 18.2696 28.712 18.1576 27.128H20.2216C20.3016 28.04 20.6776 28.792 21.3496 29.384C22.0376 29.96 22.9416 30.248 24.0616 30.248C25.1976 30.248 26.0616 29.952 26.6536 29.36C27.2616 28.752 27.5656 27.976 27.5656 27.032C27.5656 25.768 27.1656 24.872 26.3656 24.344C25.5656 23.816 24.3416 23.552 22.6936 23.552H22.1176V21.728H22.7176C25.7256 21.696 27.2296 20.728 27.2296 18.824C27.2296 17.944 26.9416 17.248 26.3656 16.736C25.8056 16.224 25.0136 15.968 23.9896 15.968C22.9656 15.968 22.1576 16.208 21.5656 16.688C20.9736 17.152 20.6136 17.776 20.4856 18.56H18.3736Z" fill="white"/>
+                                </svg>   
+                                <h5 class="card-title  mt-3">Discover and Hire</h5>
+                                <p class="card-text ">With supporting text below as a natural lead-in to additional content.  as a natural lead-in to additional content.</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+                <!-- Hire the Best Talents  -->
+                <div class="hear-from-our-clients-Header mt-5  pt-5">
+                    <!-- Header & Text  -->
+                    <h2><b>Hire the Best Talents</b></h2>
+                    <h6>With supporting text below as a natural lead <br/>as a natural lead-in to additional conte.</h6>
+                </div>
+
+                <!-- the Six columns and cards  -->
+                <div class="row mt-3">
+                    <div class="col-12 col-md-4 mt-4">
+                        <div class="card text-center  Hire_the_best_Tablents-Cards  pt-3 pb-5">
+                            <div class="card-body">
+                                <svg width="51" height="50" viewBox="0 0 51 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M22.1184 27.3444C23.962 26.0538 26.6212 23.7688 29.7933 20.7595C29.2207 20.4018 28.6131 19.946 28.0404 19.3646C27.4122 18.7534 26.9055 18.106 26.5285 17.4863C23.7786 20.8597 21.7147 23.6836 20.5344 25.6428C20.1533 25.6428 16.8453 25.7046 14.5403 28.1899C12.0953 30.8349 12.2334 37.2451 12.2334 37.2451C12.2334 37.2451 13.8008 34.7321 16.732 34.0209C20.1287 33.2094 21.6632 30.9882 22.1184 27.3444Z" fill="#084482"/>
+                                    <path d="M18.7217 43.3255L18.9544 43.5491L27.4142 39.0044L22.9134 34.5322L18.7217 43.3255Z" fill="#084482"/>
+                                    <path d="M41.6145 14.3628L39.0191 17.1612V11.3643C39.5361 10.8234 39.8596 10.4847 39.8596 10.4847C39.8596 10.4847 47.8866 2.09818 45.6291 0.494541C43.3674 -1.10485 35.9789 6.65348 35.9789 6.65348C35.9789 6.65348 34.708 8.06756 33.0725 9.90755H0V49.9043H39.0191V26.4997L46.1193 18.8394L41.6145 14.3628ZM35.8059 46.5757C33.0148 46.5757 6.0106 46.5757 3.21538 46.5757C3.21538 43.6921 3.21538 16.1155 3.21538 13.2298C5.32879 13.2298 21.282 13.2298 30.1434 13.2298C28.9302 14.6163 27.7829 15.9472 27.0042 16.8992C27.3832 17.5338 27.9064 18.1962 28.5409 18.8308C29.128 19.4079 29.7438 19.8913 30.3268 20.2427C31.6801 18.9372 33.8676 16.7032 35.8059 14.7014C35.8059 16.0665 35.8059 18.1578 35.8059 20.6303L23.8342 33.5445L28.339 38.0188L35.8059 29.9667C35.8059 37.5609 35.8059 45.1382 35.8059 46.5757Z" fill="#084482"/>
+                                    <path d="M50.6569 12.3925L47.6434 9.41757C47.2397 9.00658 46.4446 9.15141 45.909 9.73912L42.5083 13.3978L47.0172 17.8762L50.4118 14.2048C50.9639 13.6192 51.0669 12.7951 50.6569 12.3925Z" fill="#084482"/>
+                                </svg><br/>
+                                <h4 class="Hire_the_best-Card_header mt-3">UI / UX Designers</h4>
+                                <p class="card-text mt-3  ">With supporting text below as a natural lead-in to additional content.  as a natural lead-in to additional content.With supporting text below as a natural lead-in to additional content.</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4 mt-4">
+                        <div class="card text-center  Hire_the_best_Tablents-Cards pt-3 pb-5">
+                            <div class="card-body">
+                                <svg width="45" height="50" viewBox="0 0 45 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16.6467 31.2017L17.7586 30.538C18.2118 30.2675 18.3671 29.6683 18.1054 29.1996L15.9986 25.4268C15.8231 25.1125 15.5046 24.9367 15.1771 24.9367C15.0163 24.9367 14.8534 24.979 14.7042 25.0682L13.5923 25.7319C13.4396 25.823 13.2777 25.8646 13.1199 25.8646C12.6249 25.8646 12.1709 25.4553 12.1709 24.8834V23.556C12.1709 23.015 11.7467 22.5762 11.2232 22.5762H7.00938C6.48607 22.5762 6.06167 23.0148 6.06167 23.556V24.8834C6.06167 25.4553 5.60753 25.8646 5.11266 25.8646C4.95492 25.8646 4.79298 25.823 4.64026 25.7319L3.52834 25.0682C3.37917 24.9791 3.2161 24.9369 3.05545 24.9367C2.72786 24.9367 2.40947 25.1125 2.23396 25.4268L0.127132 29.1996C-0.134524 29.6683 0.020789 30.2675 0.47396 30.538L1.58588 31.2017C2.21763 31.5788 2.21763 32.5215 1.58588 32.8987L0.47396 33.5624C0.0206273 33.8329 -0.134524 34.4321 0.127132 34.9008L2.23396 38.6736C2.40947 38.9879 2.72802 39.1636 3.05545 39.1636C3.21626 39.1636 3.37917 39.1212 3.52834 39.0321L4.64026 38.3685C4.79298 38.2774 4.95492 38.2358 5.11266 38.2358C5.60769 38.2358 6.06167 38.645 6.06167 39.217V40.5443C6.06167 41.0854 6.48591 41.5242 7.00938 41.5242H11.223C11.7463 41.5242 12.1707 41.0856 12.1707 40.5443V39.217C12.1707 38.645 12.6249 38.2358 13.1198 38.2358C13.2775 38.2358 13.4394 38.2774 13.5922 38.3685L14.7041 39.0321C14.8532 39.1212 15.0163 39.1636 15.177 39.1636C15.5046 39.1636 15.8229 38.9879 15.9985 38.6736L18.1053 34.9008C18.3669 34.4321 18.2116 33.8329 17.7585 33.5624L16.6465 32.8987C16.0149 32.5215 16.0149 31.5786 16.6467 31.2017ZM9.11637 34.9569C7.56357 34.9569 6.3049 33.6554 6.3049 32.0502C6.3049 30.4447 7.56373 29.1434 9.11637 29.1434C10.669 29.1434 11.9278 30.4449 11.9278 32.0502C11.9278 33.6554 10.669 34.9569 9.11637 34.9569Z" fill="#084482"/>
+                                    <path d="M15.9157 4.22994C15.4072 3.7046 14.5835 3.7046 14.075 4.22994C13.5667 4.75562 13.5667 5.60747 14.075 6.13298L16.4007 8.53729C7.85295 8.97491 0.933828 15.9165 0.185059 24.6628L0.377382 24.3183C0.927848 23.3324 1.95411 22.72 3.05537 22.7202C3.07864 22.7202 3.10175 22.7224 3.12502 22.7231C4.59153 16.4201 9.90726 11.6529 16.3477 11.2389L14.075 13.5884C13.5667 14.1139 13.5667 14.9659 14.075 15.4914C14.3292 15.7541 14.6622 15.8854 14.9953 15.8854C15.3284 15.8854 15.6614 15.7541 15.9155 15.4914L20.4414 10.8121C20.6855 10.5596 20.8225 10.2174 20.8225 9.86067C20.8225 9.50376 20.6855 9.16155 20.4414 8.90924L15.9157 4.22994Z" fill="#084482"/>
+                                    <path d="M32.3615 11.1147C35.2514 11.1147 37.6024 8.68399 37.6024 5.69613C37.6024 2.7081 35.2514 0.277344 32.3615 0.277344C29.4716 0.277344 27.1206 2.7081 27.1206 5.69596C27.1206 8.68382 29.4716 11.1147 32.3615 11.1147Z" fill="#084482"/>
+                                    <path d="M42.5712 25.7223V18.2734C42.5712 16.2114 41.2896 14.3829 39.3943 13.7411L39.3856 13.7381L36.6136 13.2636C36.3776 13.1886 36.1255 13.3177 36.0406 13.5583L32.8953 22.4809C32.7138 22.9957 32.0096 22.9957 31.8283 22.4809L28.6829 13.5583C28.6144 13.364 28.4369 13.2422 28.2469 13.2422C28.2018 13.2422 25.3379 13.7375 25.3379 13.7375C23.4272 14.3958 22.1504 16.2271 22.1504 18.2981V25.7223C22.1504 26.835 23.0228 27.7368 24.0988 27.7368H40.6226C41.699 27.7368 42.5712 26.8348 42.5712 25.7223Z" fill="#084482"/>
+                                    <path d="M44.8872 27.502C44.7784 29.0417 43.5566 29.9846 42.067 30.0963C40.9257 36.8511 35.4073 42.0669 28.6563 42.5009L30.9287 40.1513C31.437 39.6257 31.437 38.7738 30.9287 38.2483C30.4203 37.723 29.5965 37.723 29.0881 38.2483L24.5624 42.9276C24.0541 43.4533 24.0541 44.3051 24.5624 44.8307L29.0881 49.5098C29.3423 49.7725 29.6753 49.9038 30.0083 49.9038C30.3414 49.9038 30.6745 49.7725 30.9286 49.5098C31.4369 48.9843 31.4369 48.1323 30.9286 47.6068L28.6031 45.2024C37.6581 44.7389 44.8872 36.9769 44.8872 27.502Z" fill="#084482"/>
+                                    <path d="M33.5041 13.1616C33.3833 13.0255 33.2067 12.957 33.0279 12.957H31.6954C31.5168 12.957 31.3401 13.0255 31.2192 13.1616C31.0323 13.3723 31.0051 13.6765 31.1378 13.9143L31.85 15.0244L31.5166 17.9326L32.1733 19.7385C32.2373 19.9202 32.4857 19.9202 32.5499 19.7385L33.2065 17.9326L32.8731 15.0244L33.5853 13.9143C33.7182 13.6765 33.691 13.3723 33.5041 13.1616Z" fill="#084482"/>
+                                </svg><br/>
+                                    
+                                <h4 class="Hire_the_best-Card_header mt-3">Operations</h4>
+                                    
+                                <p class="card-text mt-3">With supporting text below as a natural lead-in to additional content.  as a natural lead-in to additional content.With supporting text below as a natural lead-in to additional content.</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4 mt-4">
+                        <div class="card text-center Hire_the_best_Tablents-Cards pt-3 pb-5" >
+                            <div class="card-body">
+                                <svg width="26" height="50" viewBox="0 0 26 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M22.3372 0.277344H3.46209C1.55021 0.277344 0 1.8801 0 3.85679V46.3249C0 48.3021 1.5497 49.9043 3.46209 49.9043H22.3372C24.2501 49.9043 25.8003 48.3021 25.8003 46.3249V3.85679C25.7998 1.8801 24.2501 0.277344 22.3372 0.277344ZM10.5836 2.39358H15.2157C15.3821 2.39358 15.5176 2.53367 15.5176 2.70625C15.5176 2.8783 15.3821 3.01839 15.2157 3.01839H10.5836C10.4167 3.01839 10.2817 2.8783 10.2817 2.70625C10.2817 2.53367 10.4172 2.39358 10.5836 2.39358ZM5.96644 1.64254C6.23331 1.64254 6.44969 1.86625 6.44969 2.14217C6.44969 2.41809 6.23382 2.6418 5.96644 2.6418C5.69905 2.6418 5.48319 2.41809 5.48319 2.14217C5.48319 1.86625 5.69957 1.64254 5.96644 1.64254ZM3.77687 1.34319C4.20397 1.34319 4.54966 1.70113 4.54966 2.14217C4.54966 2.58321 4.20397 2.94115 3.77687 2.94115C3.34978 2.94115 3.00408 2.58321 3.00408 2.14217C3.00408 1.70113 3.34978 1.34319 3.77687 1.34319ZM14.1085 48.0874H11.6918C10.9252 48.0874 10.3044 47.4456 10.3044 46.654C10.3044 45.862 10.9252 45.2201 11.6918 45.2201H14.1085C14.8751 45.2201 15.4959 45.862 15.4959 46.654C15.4959 47.4456 14.8751 48.0874 14.1085 48.0874ZM24.3335 44.0872H1.46624V6.09394H24.3335V44.0872Z" fill="#084482"/>
+                                </svg><br/>
+                                <h4 class="Hire_the_best-Card_header mt-3">Mobile Developers</h4>
+                                    
+                                <p class="card-text mt-3 ">With supporting text below as a natural lead-in to additional content.  as a natural lead-in to additional content.With supporting text below as a natural lead-in to additional content.</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                
+
+
+                    <div class="col-12 col-md-4 mt-4">
+                        <div class="card text-center  Hire_the_best_Tablents-Cards pt-3 pb-5 ">
+                            <div class="card-body">
+                                <svg width="53" height="51" viewBox="0 0 53 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M26.2502 32.834C25.6142 32.834 25.0991 33.3671 25.0991 34.0247C25.0991 34.6822 25.6143 35.2156 26.2502 35.2156C26.8864 35.2156 27.402 34.6822 27.402 34.0247C27.402 33.3671 26.8864 32.834 26.2502 32.834Z" fill="#084482"/>
+                                    <path d="M51.4293 0.375H1.07144C0.479685 0.375 0 0.870944 0 1.48276V37.757C0 38.3687 0.479685 38.8648 1.07144 38.8648H19.7907L17.9166 43.565H14.3937C13.802 43.565 13.3222 44.061 13.3222 44.6727V48.8942C13.3222 49.506 13.802 50.002 14.3937 50.002H38.1072C38.6988 50.002 39.1786 49.506 39.1786 48.8942V44.6727C39.1786 44.061 38.6988 43.565 38.1072 43.565H34.5844L32.7101 38.8648H51.4293C52.0209 38.8648 52.5007 38.3687 52.5007 37.757V1.48276C52.5007 0.870833 52.0209 0.375 51.4293 0.375ZM50.3578 2.59052V29.2766H2.14289V2.59052H50.3578ZM37.0357 47.7864H15.4651V45.7805H37.0357V47.7864ZM32.2664 43.565H20.2344L22.1086 38.8648H30.3921L32.2664 43.565ZM2.14289 36.6492V31.4921H50.3578V36.6492H2.14289Z" fill="#084482"/>
+                                    <path d="M34.6295 15.8931C34.6295 15.2813 34.1497 14.7853 33.558 14.7854L32.4154 14.7855C32.3508 14.4008 32.255 14.0271 32.1276 13.6688L33.1156 13.0791C33.6279 12.773 33.8035 12.0955 33.5075 11.5657C33.2115 11.036 32.5564 10.8542 32.0439 11.1604L31.053 11.7522C30.8138 11.4565 30.5496 11.1833 30.2636 10.9358L30.836 9.91147C31.132 9.38173 30.9565 8.7041 30.4441 8.39813C29.9318 8.09194 29.2765 8.2735 28.9804 8.80325L28.4099 9.82462C28.0634 9.69291 27.702 9.59376 27.3299 9.52685V8.34606C27.3299 7.73424 26.8502 7.23828 26.2584 7.23828C26.2558 7.23828 26.253 7.23872 26.2503 7.23872C26.2476 7.23872 26.2448 7.23828 26.2422 7.23828C25.6505 7.23828 25.1707 7.73424 25.1707 8.34606V9.52674C24.7986 9.59365 24.4372 9.69268 24.0907 9.82451L23.5202 8.80313C23.2241 8.27339 22.5688 8.09183 22.0565 8.39802C21.5441 8.70399 21.3686 9.38162 21.6646 9.91136L22.237 10.9357C21.951 11.1832 21.6868 11.4564 21.4476 11.7521L20.4567 11.1603C19.9442 10.8541 19.2891 11.0359 18.9931 11.5656C18.6971 12.0954 18.8727 12.7729 19.385 13.079L20.373 13.6687C20.2456 14.027 20.1498 14.4006 20.0852 14.7854L18.9426 14.7853C18.3509 14.7852 17.8711 15.2812 17.8711 15.8929C17.8711 16.5048 18.3509 17.0007 18.9426 17.0007L20.0852 17.0006C20.1497 17.3852 20.2456 17.7589 20.373 18.1171L19.385 18.707C18.8727 19.0131 18.6971 19.6905 18.9931 20.2204C19.2891 20.75 19.9442 20.9318 20.4567 20.6256L21.4476 20.0338C21.6868 20.3296 21.951 20.6028 22.237 20.8502L21.6646 21.8746C21.3686 22.4044 21.5441 23.0819 22.0565 23.3879C22.5688 23.6941 23.2241 23.5125 23.5202 22.9829L24.0907 21.9614C24.4372 22.0931 24.7986 22.1923 25.1707 22.2591V23.4398C25.1707 24.0517 25.6505 24.5476 26.2422 24.5476C26.2448 24.5476 26.2476 24.5472 26.2503 24.5472C26.253 24.5472 26.2558 24.5476 26.2584 24.5476C26.8502 24.5476 27.3299 24.0517 27.3299 23.4398V22.2591C27.702 22.1923 28.0634 22.0932 28.4099 21.9614L28.9804 22.9829C29.2765 23.5125 29.9318 23.6941 30.4441 23.3879C30.9565 23.0819 31.132 22.4044 30.836 21.8746L30.2636 20.8502C30.5496 20.6028 30.8138 20.3296 31.053 20.0338L32.0439 20.6256C32.5564 20.9318 33.2116 20.75 33.5075 20.2204C33.8035 19.6905 33.6279 19.0131 33.1156 18.707L32.1276 18.1171C32.255 17.7589 32.3508 17.3852 32.4154 17.0006L33.558 17.0007C34.1497 17.0008 34.6295 16.5049 34.6295 15.8931ZM26.2583 20.1407C26.2557 20.1407 26.2529 20.1405 26.2502 20.1405C26.2475 20.1405 26.2447 20.1407 26.2421 20.1407C23.9769 20.1407 22.1341 18.2354 22.1341 15.8931C22.1341 13.5509 23.9769 11.6454 26.2421 11.6454C26.2447 11.6454 26.2475 11.6456 26.2502 11.6456C26.2529 11.6456 26.2557 11.6454 26.2583 11.6454C28.5235 11.6454 30.3662 13.5509 30.3662 15.8931C30.3662 18.2352 28.5235 20.1407 26.2583 20.1407Z" fill="#084482"/>
+                                </svg><br/>
+
+                                <h4 class="Hire_the_best-Card_header mt-3">Frontend Developers</h4>
+                                    
+                                <p class="card-text mt-3 ">With supporting text below as a natural lead-in to additional content.  as a natural lead-in to additional content.With supporting text below as a natural lead-in to additional content.</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4 mt-4">
+                        <div class="card text-center  Hire_the_best_Tablents-Cards pt-3 pb-5">
+                            <div class="card-body">
+                                <svg width="67" height="51" viewBox="0 0 67 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M39.6571 23.0667L43.241 19.3703L39.5855 15.5939L36.0102 19.2991C34.5108 18.2439 32.7992 17.5117 30.9585 17.1411V11.9033H25.8036V17.144C23.9571 17.5116 22.2541 18.2407 20.7604 19.299L17.1767 15.5938L13.5298 19.3702L17.1021 23.0665C16.0958 24.6169 15.3877 26.3746 15.0292 28.2895H9.95459V33.6162H15.0292C15.3875 35.5191 16.0929 37.2799 17.1021 38.8302L13.5298 42.5354L17.1738 46.3058L20.7575 42.6065C22.2512 43.6559 23.9571 44.388 25.8036 44.7585V50.0022H30.9614V44.7585C32.802 44.3939 34.5079 43.6647 36.0131 42.6125L39.5884 46.3058L43.2439 42.5354L39.6602 38.8302C40.6751 37.2859 41.3862 35.5191 41.7301 33.6162H46.8105V28.2895H41.7272C41.3802 26.3747 40.6749 24.617 39.6571 23.0667ZM28.3782 36.7761C25.2732 36.7761 22.7531 34.1587 22.7531 30.9426C22.7531 27.7353 25.2732 25.1239 28.3782 25.1239C31.4918 25.1239 34.0148 27.7354 34.0148 30.9426C34.0176 34.1587 31.4946 36.7761 28.3782 36.7761Z" fill="#084482"/>
+                                    <path d="M44.6685 5.12968C40.1472 2.13877 34.8001 0.375 29.0403 0.375C13.002 0.375137 0 13.8149 0 30.3968C0 37.3271 2.29368 43.6796 6.10111 48.7661L9.74799 44.9986C6.84649 40.9051 5.08047 35.8985 5.08047 30.4206C5.08047 16.7407 15.806 5.65751 29.0374 5.65751C33.4383 5.65751 37.498 6.97068 41.0445 9.13461L38.2463 12.2175L49.6198 13.2845L48.3985 1.00671L44.6685 5.12968Z" fill="#084482"/>
+                                    <path d="M66.8107 31.0281L59.6862 23.665V27.7883H50.3081V34.268H59.6862V38.4001L66.8107 31.0281Z" fill="#084482"/>
+                                </svg><br/>
+
+                                <h4 class="Hire_the_best-Card_header mt-3">Backend Developers</h4>
+                                    
+                                <p class="card-text mt-3">With supporting text below as a natural lead-in to additional content.  as a natural lead-in to additional content.With supporting text below as a natural lead-in to additional content.</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4 mt-4">
+                        <div class="card text-center  Hire_the_best_Tablents-Cards  pt-3 pb-5" >
+                            <div class="card-body">
+                                <svg width="71" height="51" viewBox="0 0 71 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M69.444 33.8479C65.5162 30.5185 61.2852 28.3089 60.4332 27.876C60.3321 27.8312 60.2743 27.7267 60.2743 27.6072V21.2919C61.0397 20.7693 61.5451 19.8586 61.5451 18.8285V12.2742C61.5451 9.01954 58.9892 6.37695 55.8411 6.37695H55.1624H54.4837C51.3357 6.37695 48.7798 9.01954 48.7798 12.2742V18.8285C48.7798 19.8586 49.2852 20.7544 50.0505 21.2919V27.6072C50.0505 27.652 50.0361 27.6819 50.0361 27.7117C51.2347 28.5627 52.491 29.5182 53.7184 30.5633C55.148 31.7876 55.9711 33.5792 55.9711 35.52V40.7903H70.5559V36.2964C70.5559 35.3558 70.1516 34.46 69.444 33.8479Z" fill="#084482"/>
+                                    <path d="M20.5054 27.6072V21.2919C21.2707 20.7693 21.7761 19.8586 21.7761 18.8285V12.2742C21.7761 9.01954 19.2202 6.37695 16.0722 6.37695H15.3935H14.7148C11.5668 6.37695 9.01081 9.01954 9.01081 12.2742V18.8285C9.01081 19.8586 9.51622 20.7544 10.2816 21.2919V27.6072C10.2816 27.7117 10.2238 27.8162 10.1227 27.876C9.2563 28.3089 5.02526 30.5185 1.11191 33.8479C0.404331 34.4451 0 35.3558 0 36.2964V40.7903H14.5848V35.52C14.5848 33.5941 15.4079 31.7876 16.8375 30.5633C18.0649 29.5182 19.3213 28.5627 20.5198 27.7117C20.5198 27.6819 20.5054 27.652 20.5054 27.6072Z" fill="#084482"/>
+                                    <path d="M52.0578 32.6386C47.4513 28.7269 42.4838 26.1291 41.4585 25.6066C41.343 25.5468 41.2708 25.4274 41.2708 25.293V17.8729C42.1661 17.2458 42.7726 16.1858 42.7726 14.9914V7.30248C42.7726 3.48042 39.769 0.375 36.0722 0.375H35.278H34.4838C30.787 0.375 27.7834 3.48042 27.7834 7.30248V14.9914C27.7834 16.2007 28.3754 17.2607 29.2852 17.8729V25.293C29.2852 25.4274 29.213 25.5468 29.0975 25.6066C28.0866 26.1142 23.1191 28.712 18.4982 32.6386C17.6606 33.3403 17.1841 34.4003 17.1841 35.52V40.7903H24.0144V40.1931C24.0144 38.6553 25.0686 37.3713 26.4693 37.0727C26.4837 37.0429 26.4982 37.013 26.5126 36.9832C26.1805 36.4755 26.0072 35.8634 26.0072 35.2364C26.0072 34.3854 26.3249 33.5941 26.9025 32.9819L27.7256 32.1309C28.3032 31.5337 29.083 31.2053 29.9061 31.2053C30.5271 31.2053 31.1191 31.3994 31.6101 31.7428C31.639 31.7278 31.6534 31.7278 31.6823 31.7129C31.9567 30.2498 33.1986 29.1449 34.7004 29.1449H35.87C37.3718 29.1449 38.6137 30.2498 38.8881 31.7129C38.9025 31.7278 38.917 31.7278 38.9459 31.7428C39.4513 31.3844 40.0433 31.1903 40.6787 31.1903C41.5018 31.1903 42.2672 31.5188 42.8448 32.116L43.6679 32.967C44.722 34.0569 44.852 35.7589 44.0433 36.9981C44.0578 37.013 44.0578 37.0279 44.0722 37.0578C45.4874 37.3415 46.5704 38.6255 46.5704 40.1782V40.7903H53.4008V35.52C53.3719 34.4003 52.8953 33.3403 52.0578 32.6386Z" fill="#084482"/>
+                                    <path d="M43.4657 39.3863H42.3105C42.1228 38.4009 41.7617 37.4604 41.1841 36.6094L42.0072 35.7584C42.296 35.4598 42.296 34.9521 42.0072 34.6536L41.1841 33.8025C40.8953 33.5039 40.4043 33.5039 40.1155 33.8025L39.2924 34.6536C38.4693 34.0713 37.5451 33.6831 36.6065 33.5039V32.3096C36.6065 31.8766 36.2744 31.5332 35.8556 31.5332H34.6859C34.2672 31.5332 33.935 31.8766 33.935 32.3096V33.489C32.982 33.6682 32.0578 34.0564 31.2347 34.6386L30.426 33.8025C30.1372 33.5039 29.6462 33.5039 29.3574 33.8025L28.5343 34.6536C28.2455 34.9521 28.2455 35.4598 28.5343 35.7584L29.3285 36.5795C28.7654 37.4454 28.3755 38.4009 28.2022 39.3863H27.0903C26.6715 39.3863 26.3394 39.7297 26.3394 40.1627V41.372C26.3394 41.805 26.6715 42.1483 27.0903 42.1483H28.2022C28.3755 43.1337 28.7509 44.1042 29.3285 44.9552L28.5487 45.7614C28.2599 46.06 28.2599 46.5676 28.5487 46.8662L29.3718 47.7172C29.6607 48.0158 30.1516 48.0158 30.4404 47.7172L31.2202 46.911C32.0578 47.4932 32.982 47.8814 33.9495 48.0755V49.2251C33.9495 49.6581 34.2816 50.0015 34.7004 50.0015H35.87C36.2888 50.0015 36.6209 49.6581 36.6209 49.2251V48.0755C37.574 47.8814 38.4982 47.4932 39.3213 46.911L40.1155 47.7321C40.4043 48.0307 40.8953 48.0307 41.1841 47.7321L42.0072 46.8811C42.296 46.5825 42.296 46.0749 42.0072 45.7763L41.1986 44.9402C41.7617 44.0743 42.1228 43.1337 42.3105 42.1483H43.4513C43.87 42.1483 44.2022 41.805 44.2022 41.372V40.1627C44.2311 39.7446 43.8845 39.3863 43.4657 39.3863ZM38.0361 43.6264C36.5199 45.194 34.0505 45.209 32.5199 43.6264C31.0036 42.0588 30.9892 39.5058 32.5199 37.9232C34.0361 36.3556 36.5054 36.3406 38.0361 37.9232C39.5524 39.5058 39.5524 42.0588 38.0361 43.6264Z" fill="#084482"/>
+                                </svg><br/>
+                                    
+                                <h4 class="Hire_the_best-Card_header mt-3">Product Managers</h4>
+                                    
+                                <p class="card-text mt-3">With supporting text below as a natural lead-in to additional content.  as a natural lead-in to additional content.With supporting text below as a natural lead-in to additional content.</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+                <!-- Code for "Why Organizations Choose Talentpool" -->
+                <div class="row  mt-5  pt-5 ">
+                    <div class="col-md  collaboration-col  organizations-choose">
+                        <!-- Headers & Text  -->
+                        <h2>Why Organizations<br/>Choose Talentpool</h2>
+                        <p>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+
+                    <!-- Organizations columns & cards  -->
+                    <div class="col-md  collaboration-col">
+                        <a href="" class="why_organizations-img">
+                            <div class="card bg-dark text-white border-0">
+                                <img src="/assets/images/img-7.jpg" class="card-img " alt="...">
+                                <div class="card-img-overlay">
+                                    <h6 class="card-title"><b>Adelanke</b></h6>
+                                    <h4>Developing Oculus VR</h4>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-md collaboration-col">
+                        <a href="" class="why_organizations-img">
+                            <div class="card bg-dark text-white border-0">
+                                <img src="/assets/images/img-8.jpg" class="card-img " alt="...">
+                                <div class="card-img-overlay">
+                                    <h6 class="card-title"><b>Adelanke</b></h6>
+                                    <h4>Redefine your Style guides</h4>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="row ">
+                    <div class="col-md collaboration-col">
+                        <a href="" class="why_organizations-img">
+                            <div class="card bg-dark text-white border-0">
+                                <img src="/assets/images/img-9.jpg" class="card-img " alt="...">
+                                <div class="card-img-overlay">
+                                    <h6 class="card-title"><b>Adelanke</b></h6>
+                                    <h4>Developing Oculus VR</h4>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-md collaboration-col">
+                        <a href="" class="why_organizations-img">
+                            <div class="card bg-dark text-white border-0">
+                                <img src="/assets/images/img-10.jpg" class="card-img " alt="...">
+                                <div class="card-img-overlay">
+                                    <h6 class="card-title"><b>Adelanke</b></h6>
+                                    <h4>Developing Oculus VR</h4>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-md collaboration-col">
+                        <a href="" class="why_organizations-img">
+                            <div class="card bg-dark text-white border-0">
+                                <img src="/assets/images/img-11.jpg" class="card-img " alt="...">
+                                <div class="card-img-overlay">
+                                    <h6 class="card-title"><b>Adelanke</b></h6>
+                                    <h4>Redefine your Style guides</h4>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+
+                <!-- Code for "Collaboration with top companies" -->
+                <div class="row">
+                    <!-- Header & Text  -->
+                    <div class="col-12 col-md-3 col-lg-4 collaboration-col ">
+                        <h2>Collaborating with Top Companies</h2>
+                        <p>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+
+                    <!-- Collaboration columns & cards  -->
+                    <div class="col-12 col-md-9 col-lg-8">
+                        <div class="row">
+                            <div class="col-md  collaboration-col">
+                                <div class="card collaboration-card">
+                                    <div class="card-body">
+                                      
+                                      <p class="card-text  mt-5">With supporting text below as a natural lead-in to additional content  as a natural. This content is a little bit longer.</p>
+                                      <a href="#" class="card-link">Read more <i class="fa fa-long-arrow-right ml-2 "></i></a>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="col-md collaboration-col">
+                                <div class="card collaboration-card">
+                                    <div class="card-body">
+                                      
+                                      <p class="card-text  mt-5">With supporting text below as a natural lead-in to additional content  as a natural. This content is a little bit longer.</p>
+                                      <a href="#" class="card-link">Read more <i class="fa fa-long-arrow-right ml-2 "></i></a>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="col-md  collaboration-col">
+                                <div class="card collaboration-card">
+                                    <div class="card-body">
+                                      
+                                      <p class="card-text  mt-5">With supporting text below as a natural lead-in to additional content  as a natural. This content is a little bit longer.</p>
+                                      <a href="#" class="card-link">Read more <i class="fa fa-long-arrow-right ml-2 "></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hear_from_our_client-Btn  mt-5 pt-3">
+                    <h3>Ready to get started?</h3>
+                    <a href="#" class="btn hire_to_talent-btn mt-2">Hire Top Talents</i></a>
+                </div>
+
+
+
+
+
+                <!-- Build Amazing teams on Demand -->
+                
+                <div class="row  mt-5 pt-3  build_amazing-container">
+                    
+                   <div class="col">
+                       <!-- Header & Text  -->
+                       <h1>Build Amazing<br/>Teams on Demand</h1>
+                       <p>Suscipit libero pretium nullam potenti. Interdum</p>
+
+                       <!-- Columns and icons by the left  -->
+                        <div class="row mt-3 ">
+                        
+                            <div class="col mt-2">
+                                <svg width="42" height="44" viewBox="0 0 42 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M41.0001 31.415L33.6296 38.9819L29.9443 35.1985" stroke="#084482" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M20.8166 23.4419C25.1624 23.4419 28.6855 19.8299 28.6855 15.3743C28.6855 10.9186 25.1624 7.30664 20.8166 7.30664C16.4708 7.30664 12.9478 10.9186 12.9478 15.3743C12.9478 19.8299 16.4708 23.4419 20.8166 23.4419Z" stroke="#084482" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M33.8655 42.7241H7.87207V1.54492H33.8655V30.9412" stroke="#084482" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M4.97377 39.4966H1V4.78516H4.97377" stroke="#084482" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M13.0522 27.2793H28.7768" stroke="#084482" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M13.0522 31.2393H28.7768" stroke="#084482" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M13.0522 35.1992H20.9211" stroke="#084482" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                    
+                              <h6 class=" mb-2  mt-3"><b>Hire the Best</b></h6>
+                              <p class=" mt-4  text-muted">Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                            <div class="col mt-2">
+                                <svg width="43" height="44" viewBox="0 0 43 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path opacity="0.1" fill-rule="evenodd" clip-rule="evenodd" d="M11.4727 1.54492H41.0784V32.0859H11.4727V1.54492Z" fill="#084482"/>
+                                    <path d="M8.42262 26.9727H1V42.9004H16.4383V35.2465" stroke="#084482" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.4727 1.54492H41.0784V32.0859H11.4727V1.54492Z" stroke="#084482" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M30.9574 21.5688V11.873H21.4624" stroke="#084482" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M21.4624 21.5688L30.9574 11.873" stroke="#084482" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                    
+                                <h6 class=" mb-2  mt-3"><b>A Level Talents</b></h6>
+                                <p class=" mt-4  text-muted">Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                        
+                            <div class="col mt-2">
+                                <svg width="42" height="44" viewBox="0 0 42 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M41 42.4678H1" stroke="#084482" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M4.82951 35.4575V31.5391H1L7.38688 23.8242L13.7869 31.5391H9.94426V35.4575" stroke="#084482" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M18.4428 35.4575V8.94941H14.6133L21.0002 1.2207L27.387 8.94941H23.5575V35.4575" stroke="#084482" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M32.0555 35.4575V20.2443H28.2129L34.6129 12.5156L40.9998 20.2443H37.1703V35.4575" stroke="#084482" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>  
+                                <h6 class=" mb-2  mt-3"><b>100% Guaranted</b></h6>
+                                <p class="  mt-4  text-muted">Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                            <div class="col  mt-2">
+                                <svg width="42" height="44" viewBox="0 0 42 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M41 42.4678H1" stroke="#084482" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M40.9998 35.4575V1.2207H32.5933V35.4575" stroke="#084482" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M9.40655 35.4575V23.8242H1V35.4575" stroke="#084482" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M25.1967 35.4575V12.5156H16.8032V35.4575" stroke="#084482" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                    
+                                    
+                                <h6 class=" mb-2  mt-3"><b>Speciallized Skills</b></h6>
+                                <p class="  mt-4  text-muted">Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <!-- the Three Images by the right  -->
+                    <div class="col ml-5 cards_by_the_side_of-Find_the_perfect-header   Build_amazing-Cards">
+                        <div class="row ">
+                            <div class="col ">
+                                <div class="card  card-img-1  build_amazing-img-1 build_team-card">
+                                    <img src="/assets/images/img-1.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-text">Adelanke Adelanke</h5>
+                                        <p class="card-text">UI / UX Designer</p>
+                                        
+                                        <aside class="build-peviously_at"><p>Previously at</p>    
+                                        <aside class="build-logo" ><img class="img-fluid" src="/assets/images/logo10.jpg"></aside>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row  mt-3">
+                                <div class="col-6">
+                                    <div class="card  card-img  build_amazing-img-2  build_team-card">
+                                        <img src="/assets/images/img-2.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-text">Adelanke Adelanke</h5>
+                                            <p class="card-text">UI / UX Designer</p>
+                                            
+                                            <aside class="build-peviously_at"><p>Previously at</p>    
+                                            <aside class="build-logo" ><img src="/assets/images/logo10.jpg"></aside>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="card  card-img  build_team-card">
+                                        <img src="/assets/images/img-3.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-text">Adelanke Adelanke</h5>
+                                            <p class="card-text">UI / UX Designer</p>
+                                            
+                                            <aside class="build-peviously_at"><p>Previously at</p>    
+                                            <aside class="build-logo" ><img src="/assets/images/logo10.jpg"></aside>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <!-- Code for "Not a Graduate" -->
+        <div class="container-fluid Not_a_graduate-container">
+            <div class="container">
+                <h1 class="Not_a_graduate-header">Not a graduate? You can join the pool of the top<br/>vetted talents around the world</h1>
+                <a href="#" class="btn hire_to_talent-btn mt-2">Join Talentpool</i></a>
+            </div>
+        </div>
+
+
+
+
+
+
+        <!-- Code for "From Our Blog" -->
+        <div class="container-fluid  from_our_blog-container">
+            <div class="container from_our_blog-Header">
+                <h1>From Our Blog</h1><!-- Header  -->
+
+                <!-- Blog cards  -->
+                <div class="card-group ">
+                    <div class="card  ml-2 mr-2  meet_our_talents-card">
+                        <img src="/assets/images/img-12.jpg" class="card-img-top" alt="...">
+                        <div class="card-body  ">
+                            <small>Programming > Backend</small>
+                            <h6 class="card-title  mt-4"><b>What to xpect from programming languages in the near future</b></h6>
+                            <p class="card-text  mt-4"></p>On Tuesday, Atila Neves the Deputy leader for D programming language posted about his vision for D and what he would like to do...
+                        </div>
+                        <a href="#">
+                            <div class="card-footer">
+                                <h5>Read more</h5>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card  ml-2 mr-2  meet_our_talents-card">
+                        <img src="/assets/images/img-12.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <small>Engineering > Mobile</small>
+                            <h6 class="card-title  mt-4"><b>React Native 0.61 introduces Fast Refresh for reliable hot reloading</b></h6>
+                            <p class="card-text  mt-4">Last week, the React team announced the release of React Native 0.61. This release comes with an overhauled reloading features called Fast Refresh, a...</p>
+                        </div>
+                        <a href="#">
+                            <div class="card-footer">
+                                <h5>Read more</h5>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card  ml-2 mr-2  meet_our_talents-card">
+                        <img src="/assets/images/img-12.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <small>Engineering > Front-end</small>
+                            <h6 class="card-title   mt-4"><b>How to build design System</b></h6>
+                            <p class="card-text  mt-4">By breaking design elements into homogenized components, design systems make the whole process more efficient. Planning, designing, testing</p>
+                        </div>
+                        <a href="#">
+                            <div class="card-footer">
+                                <h5>Read more</h5>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <!-- Footer  -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12  col-md-4"><!-- Site Logo & Text  -->
+                        <svg width="124" height="30" viewBox="0 0 124 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M109.609 12.5352C107.388 12.5352 105.206 14.1445 103.522 15.8366C103.943 16.3701 104.345 16.9241 104.726 17.497C104.907 17.7733 105.17 18.1471 105.495 18.5707C106.793 17.2511 108.318 16.0825 109.609 16.0825C111.803 16.0825 113.588 18.1519 113.588 20.6962C113.588 23.2404 111.803 25.3099 109.609 25.3099C107.156 25.3099 103.853 21.1028 102.889 19.6273C102.417 18.9018 98.1433 12.5352 93.7262 12.5352C89.8455 12.5352 86.688 16.1969 86.688 20.6974C86.688 25.1979 89.8455 28.8584 93.7262 28.8584C95.8833 28.8584 98.0016 27.3392 99.6644 25.7006C99.2015 25.1227 98.7619 24.5203 98.347 23.8953C98.1375 23.5798 97.9191 23.2725 97.692 22.9738C96.4281 24.2301 94.9691 25.3099 93.7262 25.3099C91.5323 25.3099 89.7479 23.2404 89.7479 20.6962C89.7479 18.1519 91.5323 16.0825 93.7262 16.0825C96.1804 16.0825 99.4828 20.2896 100.446 21.765C100.919 22.4905 105.192 28.8572 109.609 28.8572C111.475 28.8549 113.264 27.9944 114.583 26.4644C115.902 24.9344 116.644 22.8599 116.646 20.6962C116.645 18.5323 115.903 16.4577 114.583 14.9276C113.264 13.3975 111.475 12.5371 109.609 12.5352Z" fill="#00AEFF"/>
+                            <path d="M2.60713 5.57908V6.56308H2.82313V5.81908H9.61513V25.6911H8.89513V25.9551H13.6951V25.6911H12.9511V5.81908H19.6711V6.56308H19.8871V5.57908H2.60713ZM27.0888 23.7711C25.9608 24.9951 24.4488 25.7391 22.7208 25.7391C20.0568 25.7391 20.0328 21.5391 20.0328 20.0031C20.0328 18.0831 20.5128 14.1951 22.7208 14.1951C24.4488 14.1951 25.9608 14.9151 27.0888 16.1391V23.7711ZM30.7128 14.1711V13.9551H26.5608V14.1711H27.0888V15.8271C25.9608 14.6751 24.4248 13.9791 22.7208 13.9791C22.3608 13.9791 22.0728 14.0271 21.5208 14.1471C18.7368 14.7231 16.7448 17.1711 16.7448 19.9791C16.7448 22.7391 18.6408 25.1391 21.5688 25.8351C21.9768 25.9071 22.3368 25.9551 22.7208 25.9551C24.4488 25.9551 25.9608 25.2591 27.0888 24.0831V25.7151H26.5608V25.9311H30.7128V25.7151H30.1848V14.1711H30.7128ZM36.1764 5.77108H36.7284V5.55508H32.5764V5.77108H33.1284V25.7151H32.5764V25.9551H36.7284V25.7151H36.1764V5.77108ZM50.2477 20.0511C50.2237 19.0911 50.1277 18.6831 50.0317 18.3711C49.3837 15.9951 47.4637 14.5311 45.2797 14.0271C44.9197 13.9791 44.5837 13.9551 44.2717 13.9551C44.0797 13.9551 43.8397 13.9791 43.6237 14.0031C43.5037 14.0271 43.3837 14.0271 43.2637 14.0271C40.2157 14.6511 38.2477 17.1471 38.2477 19.9311C38.2477 22.7151 40.1197 25.1391 42.8077 25.7871C43.0957 25.8591 43.8157 25.9551 44.2717 25.9551C46.3837 25.9551 48.2797 24.8991 49.4317 23.0031H49.1677C48.1117 24.7551 46.2877 25.7391 44.2717 25.7391C41.7037 25.7391 41.5597 21.6591 41.5597 20.0511H46.9597H50.2477ZM41.5597 19.8591C41.6557 18.2991 41.8237 17.1951 42.1837 16.0671C42.2077 16.0911 42.7117 14.3391 43.9837 14.1711H44.2717H44.5357C45.3277 14.2671 45.8317 14.9631 46.0957 15.5151C46.6477 16.7631 46.9357 18.2511 46.9357 19.8591H41.5597ZM64.4531 25.7391V19.5231C64.2611 16.5231 62.1491 14.0511 59.1011 14.0511C57.6851 14.0511 56.3891 14.6031 55.4531 15.5391V14.2191H55.9811V13.9791H51.7571V14.2191H52.2851V25.7631H51.7571V25.9551H55.9811V25.7631H55.4531V15.8031C56.3411 14.8671 57.6611 14.2671 59.1011 14.2671C61.1651 14.2671 61.4531 17.5791 61.5251 18.9231V25.7391H60.9971V25.9551H65.0291V25.7391H64.4531ZM72.5853 13.2351V13.6911H69.5133V9.32308H70.0413V9.13108H65.9613V9.32308H66.4653V21.9471H66.4893C66.4893 24.1791 67.9293 25.9551 69.6573 25.9551C71.1453 25.9551 72.4413 24.4671 72.7053 22.4511H72.5133C72.3453 23.6751 71.7693 24.5391 71.0973 24.5391C70.2573 24.5391 69.5133 23.2911 69.5133 21.8751V13.8831H72.5853V14.3151H72.8013V13.2351H72.5853ZM81.2932 15.4911H78.1012V5.81908H81.3172C84.4612 7.81108 84.8212 13.9551 81.2932 15.4911ZM81.6292 5.60308H74.1892V5.81908H74.8852V25.6911H74.1892V25.9551H78.6532V25.6911H78.1012V15.7311H81.2932C88.2292 16.0191 88.4932 5.69908 81.6292 5.60308Z" fill="white"/>
+                            <path d="M121.734 6.92928H122.286V6.71328H118.134V6.92928H118.686V26.8733H118.134V27.1133H122.286V26.8733H121.734V6.92928Z" fill="white"/>
+                        </svg>
+                            
+                        <p>We are known for connecting top talents with top companies. We make great possibilities happen.</p>
+                    </div>
+
+
+                    <div class="col  col-md-8">
+                        <div class="row">
+
+                            <div class="col-6  col-md-3"><!-- Explore column  -->
+                                <h2>Explore</h2>
+                                <ul>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">Directories</a></li>
+                                    <li><a href="#">FAQ</a></li>
+                                    <li><a href="#">Contact Us</a></li>
+                                    <li><a href="#">Top Talent</a></li>
+                                </ul>
+                            </div>
+        
+        
+                            <div class="col-6  col-md-3"><!-- Visit and "Get In Touch" column  -->
+                                <h2>Visit</h2>
+                                <p>3 Birrel Avenue, Sabo.<br/>Yaba, Lagos State, Nigeria.</p>
+                                
+                                <h2>Get In Touch</h2>
+                                <a href="#">hello@hng.tech</a>
+                                <h6>+234 (0) 812 345 6789</h6>
+                            </div>
+        
+        
+                            <div class="col-6  col-md-3"><!-- Follow column  -->
+                                <h2>Follow</h2>
+                                <ul>
+                                    <li><a href="#">Facebook</a></li>
+                                    <li><a href="#">Linkedin</a></li>
+                                    <li><a href="#">Twitter</a></li>
+                                </ul>
+                            </div>
+        
+        
+                            <div class="col-6  col-md-3"><!-- Legal column  -->
+                                <h2>Legal</h2>
+                                <ul>
+                                    <li><a href="#">Terms</a></li>
+                                    <li><a href="#">Privacy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+        
+                        </div>
+                    </div>
+                <hr>
+
+                <p>Talentpool. All Right Reserved.</p>
+            </div>
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+
+    </body>
+</html>
